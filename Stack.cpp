@@ -52,7 +52,7 @@ bool Stack::isEmpty() const {
 
 }
 
-bool Stack::push(type newItem) {
+bool Stack::push(string newItem) {
 
     // create a new node
     StackNode *newPtr = new StackNode;
@@ -87,7 +87,7 @@ bool Stack::pop() {
 
 }
 
-bool Stack::pop(type& stackTop) {
+bool Stack::pop(string& stackTop) {
 
     if (isEmpty()) {
         return false;
@@ -107,7 +107,7 @@ bool Stack::pop(type& stackTop) {
 
 }
 
-bool Stack::getTop(type& stackTop) const {
+bool Stack::getTop(string& stackTop) const {
 
     if (isEmpty()) {
         return false;
